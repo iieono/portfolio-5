@@ -29,7 +29,7 @@ function Home({ handleItemClick }) {
     gsap.fromTo(
       ".text-span",
       {
-        y: 5,
+        y: 0,
         opacity: 0,
         x: 0,
       },
@@ -38,16 +38,15 @@ function Home({ handleItemClick }) {
         x: 0,
         y: 0,
         delay: 2.5,
-        stagger: 0.1, // Stagger time between each span
+        stagger: 0.2, // Stagger time between each span
         duration: 0.6, // Duration of each animation
         // ease: "power4.out", // Easing function
         onComplete: () => {
           gsap.fromTo(
             ".arrow-span",
-            { x: 10, y: 0, opacity: 0 },
+            { x: -20, y: 0, opacity: 0 },
             {
               x: 0,
-              delay: 0.6,
               opacity: 1,
               duration: 1.2, // Add a duration for the return animation
               ease: "power4.out",
@@ -91,8 +90,8 @@ function Home({ handleItemClick }) {
           <div className="w-0 lg:w-full h-full"></div>
           <div className="w-full flex justify-center lg:justify-start stuff p-1 lg:p-5">
             <p className="para leading-6 h-min">
-              <span className="text-span">Hi! I'm </span>
-              {/* <span className="text-span">I'm </span> */}
+              <span className="text-span">Hi! </span>
+              <span className="text-span">I'm </span>
               <span
                 className="text-span highlight"
                 onClick={() => handleItemClick("about")}
@@ -100,14 +99,14 @@ function Home({ handleItemClick }) {
                 A. Akhmadjonov.
               </span>
               <br />
-              <span className="text-span">I craft immersive digital</span>
-              {/* <span className="text-span">craft </span>
+              <span className="text-span">I </span>
+              <span className="text-span">craft </span>
               <span className="text-span">immersive </span>
-              <span className="text-span">digital</span> */}
+              <span className="text-span">digital</span>
               <br />
-              <span className="text-span">solutions that inspire.</span>
-              {/* <span className="text-span">that </span>
-              <span className="text-span">inspire.</span> */}
+              <span className="text-span">solutions </span>
+              <span className="text-span">that </span>
+              <span className="text-span">inspire.</span>
               <br className="" />
               <span
                 className="text-span highlight"
@@ -123,7 +122,10 @@ function Home({ handleItemClick }) {
                 reach out.
               </span>
               <br />
-              <span className="arrow-span text-base lg:text-xl arrow-hero">
+              <span
+                className="arrow-span text-base lg:text-xl cursor-pointer arrow-hero"
+                onClick={() => handleItemClick("portfolio")}
+              >
                 {"->"}
               </span>
             </p>

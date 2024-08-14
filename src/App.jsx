@@ -32,7 +32,7 @@ function Loading() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center h-[calc(100dvh)] bg-bg">
+    <div className="flex items-center justify-center antialiased h-[calc(100dvh)] bg-bg">
       <div className="text-5xl lg:text-6xl uppercase font-extralight text-secondary">
         {"Welcome".split("").map((letter, index) => (
           <span

@@ -92,7 +92,6 @@
 }
 .arrow-hero {
   display: inline-block;
-  cursor: default;
   opacity: 0;
 }
 .hero-span {
