@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kode+Mono:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.jetbrains {
+  font-family: "JetBrains Mono", monospace;
+}
+.kode-mono {
+  font-family: "Kode Mono", monospace;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+.nav-container {
+  position: relative;
+  /* transform: translateY(200%); */
+  /* animation: navUp 2.4s ease 3.6s forwards; */
+}
+
+@keyframes navUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.nav-list {
+  position: relative;
+  grid-template-columns: auto auto auto auto;
+  /* animation: navListUp 2.4s ease 0.6s forwards; */
+}
+.nav-item:hover {
+  transition: filter 0.6s ease;
+  color: black;
+}
+.nav-list:hover:has(.nav-item:not(.active):hover) .nav-item:not(:hover) {
+  filter: blur(3px);
+}
+.nav-item.active {
+  @apply text-xl lg:text-8xl p-0 select-none pointer-events-none;
+}
+.nav-item.active {
+  animation: navActiveUp 0.6s ease forwards;
+  grid-column: 1 / -1;
+  order: 4;
+  transition: max-height 2.4s ease-out, opacity 2.4s ease-out,
+    transform 1.2s ease-out, filter 0.6s ease;
+}
+@keyframes navActiveUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.nav-item:not(.active) {
+  position: relative;
+  opacity: 0;
+  padding: 2px 6px;
+  cursor: pointer;
+  transition: max-height 1.2s ease-out, opacity 1.2s ease-out,
+    transform 1.2s ease-out, filter 0.6s ease;
+  max-height: 0;
+}
+.nav-list:hover .nav-item {
+  transition: max-height 2.4s ease-out, opacity 2.4s ease-out,
+    transform 1.2s ease-out, filter 0.6s ease;
+  max-height: 200px;
+  opacity: 1;
+}
+.nav-list:hover .nav-item.active {
+  filter: blur(3px);
+}
+
+@keyframes navListUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.para .text-span:not(.arrow-hero):not(.highlight) {
+  @apply cursor-default;
+}
+.para .text-span:not(.arrow-hero) {
+  @apply duration-300 inline-block pr-2 leading-tight opacity-0;
+}
+.highlight {
+  @apply relative border-b-2 border-dashed lg:border-none cursor-pointer;
+}
+.para:hover .text-span:not(.highlight):not(.arrow-hero) {
+  filter: blur(2px);
+}
+.arrow-hero {
+  display: inline-block;
+  cursor: default;
+  opacity: 0;
+}
+.hero-span {
+  opacity: 0;
+}
+.mob-nav-container {
+  @apply grid max-h-0 grid-cols-2 justify-items-center p-0 items-center overflow-visible;
+}
+.mob-nav-container {
+  transition: max-height 1.2s ease, padding 1.2s ease;
+}
+.mob-nav-container .mob-nav-item {
+  transition: max-height 1.2s ease;
+  max-height: 0;
+}
+.mob-nav-container.active .mob-nav-item {
+  max-height: 60px;
+}
+.mob-nav-container.active {
+  @apply max-h-60 p-3;
+}
+
+.mob-nav-item {
+  @apply text-base uppercase;
+}
+.mob-nav-item.active {
+  display: none;
+  order: -1;
+}
+.nav-handler {
+  animation: navHandleUp 2.4s ease forwards;
+}
+
+@keyframes navHandleUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tree-home {
+  animation: gentle-sway 6s ease-in-out infinite alternate;
+  transform-origin: center left;
+}
+
+@keyframes gentle-sway {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+.skill-item {
+  @apply h-min;
+}
+.text-gradient {
+  background: linear-gradient(45deg, red, blue, green);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.links-container:has(.github-link:hover) .github-arrow {
+  transform: translateX(0);
+}
+.github-arrow {
+  transition: transform 0.6s ease;
+  transform: translateX(-200%);
+}
+.links-container:has(.email-link:hover) .email-arrow {
+  transform: translateX(0);
+}
+.email-arrow {
+  transition: transform 0.6s ease;
+  transform: translateX(200%);
+}
+.links-container:has(.cv-link:hover) .cv-arrow {
+  opacity: 1;
+  transform: rotate(90deg) translateX(0);
+}
+.cv-arrow {
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: rotate(90deg) translateX(-50%);
+}
+.links-name-container div {
+  transition: filter 0.6s ease;
+}
+.links-name-container:has(div:hover) div:not(:hover) {
+  filter: blur(1px);
+}
+.about * {
+  overflow: visible;
+}
