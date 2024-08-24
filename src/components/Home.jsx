@@ -16,14 +16,14 @@ function Home({ handleItemClick }) {
     );
     gsap.fromTo(
       ".hero-span",
-      { y: -10, opacity: 0 },
+      { y: -50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         delay: 1,
         stagger: 0.1, // Adjust stagger time as needed
-        ease: "power4.out",
-        duration: 0.6,
+        ease: "power2.out",
+        duration: 0.5,
       }
     );
     gsap.fromTo(
@@ -66,14 +66,14 @@ function Home({ handleItemClick }) {
   };
   return (
     <div className="lg:w-10/12 h-full raleway font-extralight home text-primary">
-      <div className="absolute pointer-events-none w-full lg:w-2/5 ratio-square left-[-20%] lg:left-[-5%] top-[-2%] opacity-5 overflow-visible">
+      <div className="absolute pointer-events-none w-[150%] lg:w-2/5 ratio-square left-[-50%] lg:left-[-5%] top-[-2%] opacity-5 overflow-visible">
         <img
           src="/tree-1.svg"
           alt="tree-home"
           className="reveal-image tree-home opacity-0"
         />
       </div>
-      <div className="w-full h-full flex flex-col">
+      <div className="w-full h-full flex flex-col items-center">
         <div className="w-full h-full flex justify-between uppercase">
           <div className="w-full h-full flex flex-col text-4xl lg:text-6xl pb-2 lg:p-5 items-start lg:items-end justify-end">
             <div className="flex gap-[0.9rem]">
@@ -123,7 +123,7 @@ function Home({ handleItemClick }) {
               </span>
               <br />
               <span
-                className="arrow-span text-base lg:text-xl cursor-pointer arrow-hero"
+                className="arrow-span text-3xl  lg:text-xl cursor-pointer arrow-hero"
                 onClick={() => handleItemClick("portfolio")}
               >
                 {"->"}

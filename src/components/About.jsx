@@ -20,20 +20,7 @@ function About() {
             </div>
           </div>
           <hr className=" lg:hidden" />
-          <div className="flex flex-col gap-3">
-            <div className="text-xl lg:text-2xl">Languages</div>
-            <div className="flex gap-5">
-              <div className="flex flex-col gap-3">
-                <div>Uzbek</div>
-                <div>English</div>
-              </div>
-              <div className="flex flex-col gap-3">
-                <div>(native)</div>
-                <div>(advanced)</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3">
+          {/* <div className="flex flex-col gap-3">
             <div className="text-lg lg:text-2xl">
               Let's connect{" "}
               <span className="font-bold text-gradient">[AVAILABLE]</span>{" "}
@@ -52,13 +39,13 @@ function About() {
                 <div className="cursor-pointer overflow-hidden cv-arrow h-max">{`->`}</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* second side */}
         <hr className="my-5 lg:hidden" />
-        <div className="h-full w-full lg:w-2/3 p-2 flex flex-col justify-between gap-10">
+        <div className="h-full w-full lg:w-2/3 p-2 flex flex-col items-cend justify-end gap-10">
           <div className="">Senior Software Engineering student.</div>
-          <div className="h-full flex flex-wrap gap-x-10">
+          <div className="flex flex-wrap gap-x-10">
             <div className="skill-item">Nextjs</div>
             <div className="skill-item">Nextjs</div>
             <div className="skill-item">Nextjs</div>
@@ -74,7 +61,7 @@ function About() {
             <div className="skill-item">Nextjs</div>
             <div className="skill-item">Nextjs</div>
           </div>
-          <div className="h-full flex flex-wrap gap-x-10">
+          <div className="flex flex-wrap gap-x-10">
             <div className="skill-item">Blender</div>
             <div className="skill-item">Blender</div>
             <div className="skill-item">Blender</div>
@@ -89,8 +76,13 @@ function About() {
             <div className="skill-item">Blender</div>
             <div className="skill-item">Blender</div>
           </div>
-          <div className="h-full">interests</div>
-          <div className="h-full"></div>
+          <div className="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+            quos repellendus amet laudantium tempore ipsum. Cum pariatur,
+            eveniet perspiciatis ullam est doloremque consequuntur, neque
+            quaerat nemo voluptatum laborum voluptas soluta. Nihil consequatur
+            vitae fugit deleniti maxime, obcaecati iusto numquam est.
+          </div>
         </div>
       </div>
     </div>

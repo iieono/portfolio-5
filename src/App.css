@@ -85,7 +85,7 @@
   @apply duration-300 inline-block pr-2 leading-tight opacity-0;
 }
 .highlight {
-  @apply relative border-b-2 border-dashed lg:border-none cursor-pointer;
+  @apply relative cursor-pointer ;
 }
 .para:hover .text-span:not(.highlight):not(.arrow-hero) {
   filter: blur(2px);
