@@ -75,7 +75,7 @@ function Home({ handleItemClick }) {
       </div>
       <div className="w-full h-full flex flex-col items-center">
         <div className="w-full h-full flex justify-between uppercase">
-          <div className="w-full h-full flex flex-col text-4xl lg:text-6xl pb-2 lg:p-5 items-start lg:items-end justify-end">
+          <div className="w-full h-full flex flex-col text-5xl lg:text-6xl pb-2 lg:p-5 items-start lg:items-end justify-end">
             <div className="flex gap-[0.9rem]">
               <p>{splitText("designer")}</p>
               <p className="hero-span">&</p>
@@ -88,7 +88,7 @@ function Home({ handleItemClick }) {
         </div>
         <div className="w-full h-full flex justify-between jetbrains">
           <div className="w-0 lg:w-full h-full"></div>
-          <div className="w-full flex justify-center lg:justify-start stuff p-1 lg:p-5">
+          <div className="w-full flex justify-center text-lg lg:justify-start stuff p-1 lg:p-5">
             <p className="para leading-6 h-min">
               <span className="text-span">Hi! </span>
               <span className="text-span">I'm </span>
