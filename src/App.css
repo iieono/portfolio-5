@@ -87,12 +87,13 @@
 .highlight {
   @apply relative cursor-pointer ;
 }
-.para:hover .text-span:not(.highlight):not(.arrow-hero) {
+/* .para:hover .text-span:not(.highlight):not(.arrow-hero) {
   filter: blur(2px);
-}
+} */
 .arrow-hero {
   display: inline-block;
   opacity: 0;
+  user-select: none;
 }
 .hero-span {
   opacity: 0;

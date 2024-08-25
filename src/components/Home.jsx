@@ -123,7 +123,7 @@ function Home({ handleItemClick }) {
               </span>
               <br />
               <span
-                className="arrow-span text-3xl  lg:text-xl cursor-pointer arrow-hero"
+                className="arrow-span  cursor-pointer arrow-hero"
                 onClick={() => handleItemClick("portfolio")}
               >
                 {"->"}
