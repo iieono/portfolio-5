@@ -11,7 +11,7 @@ function Navbar({ handleItemClick, activeItem }) {
     );
   }, []);
   return (
-    <div className="nav-container z-40 hidden lg:flex fixed bottom-0 left-0 lg:text-8xl jetbrains font-extralight overflow-visible px-6 py-2 uppercase text-secondary bg-accent rounded-tr-3xl">
+    <div className="nav-container z-40 hidden lg:flex  fixed bottom-0 left-0 lg:text-8xl jetbrains font-extralight overflow-visible px-6 py-2 uppercase text-secondary bg-accent rounded-tr-3xl">
       <div className="absolute aspect-square h-[50%] top-[-50%] left-0 bg-accent">
         <div className="absolute w-full h-full bg-bg rounded-bl-full"></div>
       </div>
@@ -21,7 +21,7 @@ function Navbar({ handleItemClick, activeItem }) {
         </div>
       </div>
       <div>
-        <div className="nav-list grid grid-wrap text-sm w-full lg:w-content h-full p-2">
+        <div className="nav-list grid grid-wrap text-base w-full lg:w-content h-full p-2">
           <div
             className={`nav-item ${activeItem === "home" ? "active" : ""}`}
             onClick={() => handleItemClick("home")}

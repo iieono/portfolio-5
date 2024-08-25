@@ -40,15 +40,15 @@ function Home({ handleItemClick }) {
         delay: 2.5,
         stagger: 0.2, // Stagger time between each span
         duration: 0.6, // Duration of each animation
-        // ease: "power4.out", // Easing function
+        ease: "power4.out", // Easing function
         onComplete: () => {
           gsap.fromTo(
             ".arrow-span",
-            { x: -20, y: 0, opacity: 0 },
+            { x: -50, y: 0, opacity: 0 },
             {
               x: 0,
-              opacity: 1,
-              duration: 1.2, // Add a duration for the return animation
+              opacity: 0.6,
+              duration: 1.8, // Add a duration for the return animation
               ease: "power4.out",
             }
           );
@@ -65,8 +65,8 @@ function Home({ handleItemClick }) {
     ));
   };
   return (
-    <div className="lg:w-10/12 h-full raleway font-extralight home text-primary">
-      <div className="absolute pointer-events-none w-[150%] lg:w-2/5 ratio-square left-[-50%] lg:left-[-5%] top-[-2%] opacity-5 overflow-visible">
+    <div className="lg:w-10/12 h-full raleway font-extralight home text-primary overflow-visible">
+      <div className="absolute pointer-events-none w-[140%] lg:w-2/5 ratio-square left-[-50%] lg:left-[-5%] top-[8%] lg:top-[-2%] opacity-5 overflow-visible">
         <img
           src="/tree-1.svg"
           alt="tree-home"
@@ -78,7 +78,7 @@ function Home({ handleItemClick }) {
           <div className="w-full h-full flex flex-col text-5xl lg:text-6xl pb-2 lg:p-5 items-start lg:items-end justify-end">
             <div className="flex gap-[0.9rem]">
               <p>{splitText("designer")}</p>
-              <p className="hero-span">&</p>
+              <p className="hero-span text-lead">&</p>
             </div>
             <div>
               <p>{splitText("developer")}</p>
@@ -86,10 +86,10 @@ function Home({ handleItemClick }) {
           </div>
           <div className="w-0 lg:w-full h-full"></div>
         </div>
-        <div className="w-full h-full flex justify-between jetbrains">
+        <div className="w-full h-full flex justify-between overflow-visible jetbrains">
           <div className="w-0 lg:w-full h-full"></div>
-          <div className="w-full flex justify-center text-lg lg:justify-start stuff p-1 lg:p-5">
-            <p className="para leading-6 h-min">
+          <div className="w-full flex justify-center overflow-visible  text-lg lg:justify-start stuff p-1 lg:p-5">
+            <p className="para leading-6 h-min overflow-visible ">
               <span className="text-span">Hi! </span>
               <span className="text-span">I'm </span>
               <span
@@ -123,7 +123,7 @@ function Home({ handleItemClick }) {
               </span>
               <br />
               <span
-                className="arrow-span  cursor-pointer arrow-hero"
+                className="arrow-span text-[12rem] leading-none lg:text-6xl overflow-visible cursor-pointer arrow-hero"
                 onClick={() => handleItemClick("portfolio")}
               >
                 {"->"}

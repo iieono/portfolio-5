@@ -9,6 +9,7 @@ export default {
         accent: "#F2f2f2f2",
         bg: "#ffffff",
         navsize: "100px",
+        lead: '#22c55e'
       },
     },
   },
