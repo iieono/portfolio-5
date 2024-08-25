@@ -50,7 +50,7 @@ function NavbarMobile({ handleItemClick, activeItem }) {
     <div className="jetbrains lg:hidden fixed top-0 w-full h-full z-20">
       <div 
         ref={navButtonRef}
-        className={`p-1 raleway font-extralight text-lead z-20 opacity-0 absolute right-2 top-2 flex items-center justify-center text-4xl rounded-full duration-100 origin-center transition-transform cursor-pointer ${navOpen && 'rotate-0'}`}
+        className={`p-1 raleway font-extralight text-lead z-20 opacity-0 absolute right-4 top-2 flex items-center justify-center text-4xl rounded-full duration-100 origin-center transition-transform cursor-pointer ${navOpen && 'rotate-0'}`}
         onClick={() => setNavOpen(prev => !prev)}
       >
         {navOpen ? (
