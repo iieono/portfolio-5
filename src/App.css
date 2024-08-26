@@ -98,11 +98,9 @@
 .arrow-hero {
   display: inline-block;
   opacity: 0;
-  color: transparent;
-  -webkit-text-stroke: 3px #22c55e;
 }
 .arrow-hero {
-  @apply blur-[5px] lg:blur-[1px] lg:text-lead font-bold lg:font-extralight lg:[-webkit-text-stroke:0px_transparent] [text-shadow:20px_40px_15px_#22c55e] lg:[text-shadow:none]
+  @apply blur-[2px] lg:blur-[1px] 
 }
 .hero-span {
   opacity: 0;

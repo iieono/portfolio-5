@@ -35,19 +35,19 @@ function NavbarMobile({ handleItemClick, activeItem }) {
           ease: "power2.out"
         }
       ).fromTo(navItems, {
-       y:40, opacity: 0 
+       y:10, opacity: 0 
       },{
         opacity: 1,
-        duration: 1.2,
+        duration: 0.6,
         y: 0,
         stagger: 0.3,
-        ease: "power4.out"
+        ease: "ease.in"
       }, '-=0.5')
     }
   }, [navOpen]);
 
   return (
-    <div className="jetbrains lg:hidden fixed top-0 w-full h-full z-20">
+    <div className={`jetbrains  lg:hidden fixed right-0 top-0 ${navOpen ? 'h-full w-full' : 'h-12 w-14'} `}>
       <div 
         ref={navButtonRef}
         className={`p-1 raleway font-extralight text-lead z-20 opacity-0 absolute right-4 top-2 flex items-center justify-center text-4xl rounded-full duration-100 origin-center transition-transform cursor-pointer ${navOpen && 'rotate-0'}`}
@@ -61,7 +61,7 @@ function NavbarMobile({ handleItemClick, activeItem }) {
         )}
       </div>
       {navOpen && (
-        <div ref={navContainerRef} className="absolute top-0 right-0 bg-lead backdrop-blur-sm text-6xl uppercase raleway flex flex-col gap-3 items-start p-4 justify-center overflow-hidden">
+        <div ref={navContainerRef} className="absolute top-0 right-0 bg-secondary text-lead shadow-white backdrop-blur-sm text-6xl uppercase raleway flex flex-col gap-3 items-start p-4 justify-center overflow-hidden">
           <div className={`mob-nav-item ${activeItem === 'home' && 'active'}`} onClick={() => {handleItemClick("home")
             setNavOpen(false)
           }}>home</div>
