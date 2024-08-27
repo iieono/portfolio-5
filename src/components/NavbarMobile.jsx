@@ -22,24 +22,25 @@ function NavbarMobile({ handleItemClick, activeItem }) {
 
       timeline.fromTo(navContainer, 
         { 
-          width: 0, 
-          height: 0, 
+          width: '100%', 
+          height: '100%', 
+          borderRadius: '0 1024px',
           opacity: 0 
         },
         { 
           width: '100%', 
           height: '100%', 
           opacity: 1,
-          duration: 1.2 ,
+          duration: 0.6 ,
           borderRadius: '0 1024px',
           ease: "power2.out"
         }
       ).fromTo(navItems, {
-       y:10, opacity: 0 
+       y:-20, opacity: 0 
       },{
         opacity: 1,
         duration: 0.6,
-        y: 0,
+        y: -50,
         stagger: 0.3,
         ease: "ease.in"
       }, '-=0.5')

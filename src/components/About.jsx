@@ -10,7 +10,7 @@ function About() {
         {/* first side */}
         <div className="h-full w-full p-2 flex flex-col gap-5 lg:gap-10 overflow-visible">
           <div className="lg:w-2/3 flex flex-col gap-2 overflow-visible">
-            <div className="text-2xl">Hello there! </div>
+            <div className="text-4xl">Hello there! </div>
             <div className="overflow-visible text-base">
               My name is Abdusamadbek Akhmadjonov. I'm a UX/UI designer and
               full-stack developer based in Uzbekistan. My passion for

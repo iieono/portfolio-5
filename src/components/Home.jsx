@@ -66,7 +66,7 @@ function Home({ handleItemClick }) {
   };
   return (
     <div className="lg:w-10/12 h-full raleway font-extralight home text-primary ">
-      <div className="absolute pointer-events-none w-[140%] lg:w-2/5 ratio-square left-[-50%] lg:left-[-5%] top-[8%] lg:top-[-2%] opacity-5 ">
+      <div className="absolute pointer-events-none w-[140%] lg:w-2/5 ratio-square left-[-50%] lg:left-[-5%] top-[2%]  opacity-5 ">
         <img
           src="/tree-1.svg"
           alt="tree-home"
@@ -123,7 +123,7 @@ function Home({ handleItemClick }) {
               </span>
               <br />
               <span
-                className="arrow-span text-[14rem] rounded-full rotate-[-30deg] border-4 border-lead aspect-square text-center pt-5 align-middle leading-none lg:text-6xl overflow-visible cursor-pointer arrow-hero"
+                className="arrow-span text-[7rem] aspect-square text-center align-middle leading-none lg:text-6xl overflow-visible cursor-pointer arrow-hero"
                 onClick={() => handleItemClick("portfolio")}
               >
                 {"->"}

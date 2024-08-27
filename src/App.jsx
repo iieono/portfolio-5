@@ -61,7 +61,7 @@ function App() {
   if (isLoading) return <Loading />;
 
   return (
-    <div className="min-h-screen h-[calc(100dvh)] bg-accent">
+    <div className="min-h-screen h-[100vh] bg-accent">
       <Layout />
       <FallingLeaves />
     </div>
