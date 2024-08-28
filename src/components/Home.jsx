@@ -125,7 +125,7 @@ function Home({ handleItemClick }) {
               </span>
               <br />
               {/* <span
-                className="arrow-span text-[7rem] aspect-square text-center align-middle leading-none lg:text-6xl overflow-visible cursor-pointer arrow-hero"
+                className="arrow-span s aspect-square text-center align-middle leading-none lg:text-6xl overflow-visible cursor-pointer arrow-hero"
                 onClick={() => handleItemClick("portfolio")}
               >
                 {"->"}

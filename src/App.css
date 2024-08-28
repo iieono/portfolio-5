@@ -203,9 +203,7 @@
 .links-name-container:has(div:hover) div:not(:hover) {
   filter: blur(1px);
 }
-.about * {
-  overflow: visible;
-}
+
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
