@@ -266,3 +266,34 @@
 .staggered-out-slide-2 {
   animation: fadeSlideOut 3s ease-in-out 0.3s infinite;
 }
+.blob-anim {
+  animation: blobHover 4s ease-in-out infinite;
+}
+
+@keyframes blobHover {
+
+  0%,
+  100% {
+    transform: scale(1) translateX(-45%);
+    border-radius: 30%;
+    background-color: #4ade80;
+  }
+
+  25% {
+    transform: scale(1.1) translateX(-50%);
+    border-radius: 40%;
+    background-color: #34d399;
+  }
+
+  50% {
+    transform: scale(1.2) translateX(-55%);
+    border-radius: 50%;
+    background-color: #10b981;
+  }
+
+  75% {
+    transform: scale(1.1) translateX(-50%);
+    border-radius: 40%;
+    background-color: #34d399;
+  }
+}

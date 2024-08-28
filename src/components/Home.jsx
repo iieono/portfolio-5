@@ -66,7 +66,7 @@ function Home({ handleItemClick }) {
   };
   return (
     <div className="lg:w-10/12 h-full raleway font-extralight home text-primary ">
-      <div className="h-56 w-56 bg-lead rounded-full blur-3xl absolute bottom-0 left-1/2 -translate-x-1/2"></div>
+      <div className="blob-anim h-52 w-52 lg:w-96 lg:h-96 aspect-square bg-lead rounded-full blur-3xl lg:opacity-80 absolute bottom-0 left-1/2 lg:left-3/4 -translate-x-1/2"></div>
       <div className="absolute pointer-events-none w-[140%] lg:w-2/5 ratio-square left-[-50%] lg:left-[-5%] top-[2%]  opacity-5 ">
         <img
           src="/tree-1.svg"

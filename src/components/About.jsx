@@ -1,6 +1,4 @@
 import React from "react";
-import InteractiveBackground from "./InteractiveBackground";
-import { BsCopy } from "react-icons/bs";
 
 function About() {
   return (
@@ -8,7 +6,7 @@ function About() {
       {/* <InteractiveBackground /> */}
       <div className="flex flex-col lg:flex-row w-full gap-10 h-full p-5 lg:p-20 overflow-auto">
         {/* first side */}
-        <div className="h-full w-full p-2 flex flex-col gap-5 lg:gap-10 overflow-visible">
+        <div className="h-full w-full p-2 pt-3 flex flex-col gap-5 lg:gap-10 overflow-visible">
           <div className="lg:w-10/12 h-screen flex flex-col justify-between lg:justify-start gap-2 overflow-visible">
             <div className=" text-3xl lg:text-[9rem] italic leading-none sofia ">Hello<span className="text-lead ital">!</span> </div>
             <div className="overflow-visible text-sm lg:text-base leading-7 lg:leading-7 pt-2 lg:pt-5 lg:px-3">
