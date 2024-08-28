@@ -72,7 +72,7 @@ function About() {
             <div className="skill-item">Blender</div>
             <div className="skill-item">Blender</div>
           </div>
-          <div className="h-full">
+          <div className="h-full overflow-visible">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
             quos repellendus amet laudantium tempore ipsum. Cum pariatur,
             eveniet perspiciatis ullam est doloremque consequuntur, neque

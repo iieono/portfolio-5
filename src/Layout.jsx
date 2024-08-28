@@ -59,10 +59,10 @@ const Layout = () => {
 
   return (
     <div
-      className="layout bg-bg h-full max-h-screen w-full flex overflow-hidden"
+      className="layout bg-bg h-[calc(100dvh)] max-h-screen w-full flex overflow-hidden"
       ref={layoutRef}
     >
-      <div className="section w-screen h-full flex justify-center flex-shrink-0">
+      <div className="section w-screen h-screen flex justify-center flex-shrink-0">
         <Home handleItemClick={handleItemClick} />
       </div>
       <div className="section w-screen h-full flex justify-center flex-shrink-0">
