@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="lg:w-10/12 h-full jetbrains font-extralight text-sm lg:text-base about overflow-auto">
       {/* <InteractiveBackground /> */}
-      <div className="flex flex-col lg:flex-row w-full gap-10 h-full p-5 lg:p-20 overflow-auto">
+      <div className="flex flex-col lg:flex-row w-full gap-10 h-full p-5 lg:p-20 overflow-scroll">
         {/* first side */}
         <div className="h-full w-full p-2 pt-3 flex flex-col gap-5 lg:gap-10 overflow-visible">
           <div className="lg:w-10/12 h-screen flex flex-col justify-between lg:justify-start gap-2 overflow-visible">
@@ -40,7 +40,7 @@ function About() {
           </div> */}
         </div>
         {/* second side */}
-        <div className="h-full w-full lg:w-2/3 p-2 flex flex-col items-end justify-end gap-10">
+        <div className="h-full w-full lg:w-2/3 p-2 flex flex-col items-end justify-end gap-10 overflow-visible">
           <div className="flex h-full flex-wrap gap-x-10">
             <div className="skill-item">Nextjs</div>
             <div className="skill-item">Nextjs</div>
