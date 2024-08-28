@@ -9,7 +9,7 @@ function About() {
         <div className="h-full w-full p-2 pt-3 flex flex-col gap-5 lg:gap-10 overflow-visible">
           <div className="lg:w-10/12 h-screen flex flex-col justify-between lg:justify-start gap-2 overflow-visible">
             <div className=" text-3xl lg:text-[9rem] italic leading-none sofia ">Hello<span className="text-lead ital">!</span> </div>
-            <div className="overflow-visible text-sm lg:text-base leading-7 lg:leading-7 pt-2 lg:pt-5 lg:px-3">
+            <div className="overflow-visible text-sm lg:text-base leading-7 lg:leading-7 pt-2  lg:pt-5 lg:px-3">
               My name is Abdusamadbek Akhmadjonov. I'm a UX/UI designer and
               full-stack developer based in Uzbekistan. My passion for
               technology drives me to continually explore and learn new aspects
@@ -40,8 +40,8 @@ function About() {
           </div> */}
         </div>
         {/* second side */}
-        <div className="h-full w-full lg:w-2/3 p-2 flex flex-col items-end justify-end gap-10 overflow-visible">
-          <div className="flex h-full flex-wrap gap-x-10">
+        <div className="h-4/5 w-full lg:w-2/3 p-2 flex flex-col items-end justify-end gap-10 overflow-visible">
+          <div className="flex h-full flex-wrap gap-x-10 pr-2">
             <div className="skill-item">Nextjs</div>
             <div className="skill-item">Nextjs</div>
             <div className="skill-item">Nextjs</div>
@@ -57,7 +57,7 @@ function About() {
             <div className="skill-item">Nextjs</div>
             <div className="skill-item">Nextjs</div>
           </div>
-          <div className="flex h-full flex-wrap gap-x-10">
+          <div className="flex h-full flex-wrap pr-2 gap-x-10">
             <div className="skill-item">Blender</div>
             <div className="skill-item">Blender</div>
             <div className="skill-item">Blender</div>
@@ -72,7 +72,7 @@ function About() {
             <div className="skill-item">Blender</div>
             <div className="skill-item">Blender</div>
           </div>
-          <div className="h-full overflow-visible">
+          <div className="h-full overflow-visible pr-2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
             quos repellendus amet laudantium tempore ipsum. Cum pariatur,
             eveniet perspiciatis ullam est doloremque consequuntur, neque

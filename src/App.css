@@ -207,7 +207,7 @@
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
-    transform: translateX(5px);
+    transform: translateX(10px);
   }
 
   25% {
@@ -237,7 +237,7 @@
 @keyframes fadeSlideOut {
   0% {
     opacity: 0;
-    transform: translateX(-5px);
+    transform: translateX(-10px);
   }
 
   25% {
