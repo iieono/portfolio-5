@@ -59,7 +59,7 @@ const Layout = () => {
 
   return (
     <div
-      className="layout bg-bg h-full w-full flex overflow-hidden"
+      className="layout bg-bg h-screen w-full flex overflow-hidden"
       ref={layoutRef}
     >
       <div className="section w-screen h-full flex justify-center flex-shrink-0">
