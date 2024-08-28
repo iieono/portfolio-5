@@ -32,8 +32,8 @@ function Loading() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center antialiased h-[calc(100dvh)] bg-bg">
-      <div className="text-5xl lg:text-6xl uppercase font-extralight text-secondary">
+    <div className="flex items-center justify-center antialiased h-[var(--doc-height)] bg-bg">
+      <div className="text-5xl lg:text-6xl uppercase opacity-0 font-extralight text-secondary">
         {"Welcome".split("").map((letter, index) => (
           <span
             key={index}
@@ -50,6 +50,22 @@ function Loading() {
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const documentHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+    };
+
+    window.addEventListener("resize", documentHeight);
+
+    // Set initial height
+    documentHeight();
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", documentHeight);
+    };
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -61,7 +77,7 @@ function App() {
   if (isLoading) return <Loading />;
 
   return (
-    <div className="min-h-screen h-[100vh] bg-accent">
+    <div className="min-h-screen h-[var(--doc-height)] bg-accent">
       <Layout />
       <FallingLeaves />
     </div>

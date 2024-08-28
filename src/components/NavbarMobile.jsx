@@ -48,10 +48,10 @@ function NavbarMobile({ handleItemClick, activeItem }) {
   }, [navOpen]);
 
   return (
-    <div className={`jetbrains  lg:hidden fixed right-0 top-0 ${navOpen ? 'h-full w-full' : 'h-12 w-14'} `}>
+    <div className={`jetbrains  lg:hidden fixed right-0 top-0 ${navOpen ? 'h-full w-full' : 'h-20 w-20'} `}>
       <div 
         ref={navButtonRef}
-        className={`p-1 raleway font-extralight text-lead z-20 opacity-0 absolute right-4 top-2 flex items-center justify-center text-4xl rounded-full duration-100 origin-center transition-transform cursor-pointer ${navOpen && 'rotate-0'}`}
+        className={`p-1 raleway font-extralight text-lead z-20 opacity-0 absolute right-4 top-4 flex items-center justify-center text-4xl rounded-full duration-100 origin-center transition-transform cursor-pointer ${navOpen && 'rotate-0'}`}
         onClick={() => setNavOpen(prev => !prev)}
       >
         {navOpen ? (
@@ -63,13 +63,22 @@ function NavbarMobile({ handleItemClick, activeItem }) {
       </div>
       {navOpen && (
         <div ref={navContainerRef} className="absolute top-0 right-0 bg-secondary text-lead shadow-white backdrop-blur-sm text-6xl uppercase raleway flex flex-col gap-3 items-start p-4 justify-center overflow-hidden">
-          <div className={`mob-nav-item ${activeItem === 'home' && 'active'}`} onClick={() => {handleItemClick("home")
+          <div className={`mob-nav-item ${activeItem === 'home' && 'active'}`} onClick={() => {
+            if(activeItem != 'home'){
+              handleItemClick("home")
+            }
             setNavOpen(false)
           }}>home</div>
-          <div className={`mob-nav-item ${activeItem === 'about' && 'active'}`} onClick={() => {handleItemClick("about")
+          <div className={`mob-nav-item ${activeItem === 'about' && 'active'}`} onClick={() => {
+            if(activeItem != 'about'){
+              handleItemClick("about")
+            }
             setNavOpen(false)
           }}>about</div>
-          <div className={`mob-nav-item ${activeItem === 'portfolio' && 'active'}`} onClick={() => {handleItemClick("portfolio")
+          <div className={`mob-nav-item ${activeItem === 'portfolio' && 'active'}`} onClick={() => {
+            if(activeItem != 'portfolio'){
+              handleItemClick("portfolio")
+            }
             setNavOpen(false)
           }}>portfolio</div>
         </div>

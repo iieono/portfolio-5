@@ -66,6 +66,7 @@ function Home({ handleItemClick }) {
   };
   return (
     <div className="lg:w-10/12 h-full raleway font-extralight home text-primary ">
+      <div className="h-56 w-56 bg-lead rounded-full blur-3xl absolute bottom-0 left-1/2 -translate-x-1/2"></div>
       <div className="absolute pointer-events-none w-[140%] lg:w-2/5 ratio-square left-[-50%] lg:left-[-5%] top-[2%]  opacity-5 ">
         <img
           src="/tree-1.svg"
@@ -73,14 +74,15 @@ function Home({ handleItemClick }) {
           className="reveal-image tree-home opacity-0"
         />
       </div>
+      
       <div className="w-full h-full flex flex-col items-center">
         <div className="w-full h-full flex justify-between uppercase">
           <div className="w-full h-full flex flex-col text-5xl lg:text-6xl pb-2 lg:p-5 items-start lg:items-end justify-end">
             <div className="flex gap-[0.9rem]">
-              <p>{splitText("designer")}</p>
+              <p >{splitText("designer")}</p>
               <p className="hero-span text-lead">&</p>
             </div>
-            <div>
+            <div className="">
               <p>{splitText("developer")}</p>
             </div>
           </div>
@@ -93,7 +95,7 @@ function Home({ handleItemClick }) {
               <span className="text-span">Hi! </span>
               <span className="text-span">I'm </span>
               <span
-                className="text-span highlight"
+                className="text-span "
                 onClick={() => handleItemClick("about")}
               >
                 A. Akhmadjonov.
@@ -122,15 +124,16 @@ function Home({ handleItemClick }) {
                 reach out.
               </span>
               <br />
-              <span
+              {/* <span
                 className="arrow-span text-[7rem] aspect-square text-center align-middle leading-none lg:text-6xl overflow-visible cursor-pointer arrow-hero"
                 onClick={() => handleItemClick("portfolio")}
               >
                 {"->"}
-              </span>
+              </span> */}
             </p>
           </div>
         </div>
+              
       </div>
     </div>
   );
