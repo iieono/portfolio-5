@@ -88,10 +88,10 @@ function Home({ handleItemClick }) {
           </div>
           <div className="w-0 lg:w-full h-full"></div>
         </div>
-        <div className="w-full h-full flex justify-between overflow-visible jetbrains">
+        <div className="w-full h-full flex justify-between  jetbrains">
           <div className="w-0 lg:w-full h-full"></div>
-          <div className="w-full flex justify-center overflow-visible  text-lg lg:justify-start stuff p-1 lg:p-5">
-            <p className="para leading-6 h-min overflow-visible ">
+          <div className="w-full flex justify-center   text-lg lg:justify-start stuff p-1 lg:p-5">
+            <p className="para leading-6 h-min  ">
               <span className="text-span">Hi! </span>
               <span className="text-span">I'm </span>
               <span
@@ -125,7 +125,7 @@ function Home({ handleItemClick }) {
               </span>
               <br />
               {/* <span
-                className="arrow-span s aspect-square text-center align-middle leading-none lg:text-6xl overflow-visible cursor-pointer arrow-hero"
+                className="arrow-span s aspect-square text-center align-middle leading-none lg:text-6xl  cursor-pointer arrow-hero"
                 onClick={() => handleItemClick("portfolio")}
               >
                 {"->"}
