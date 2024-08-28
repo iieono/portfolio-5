@@ -33,12 +33,12 @@ function Loading() {
 
   return (
     <div className="flex items-center justify-center antialiased h-[var(--doc-height)] bg-bg">
-      <div className="text-5xl lg:text-6xl uppercase opacity-0 font-extralight text-secondary">
+      <div className="text-5xl lg:text-6xl uppercase font-extralight text-secondary">
         {"Welcome".split("").map((letter, index) => (
           <span
             key={index}
             ref={(el) => (lettersRef.current[index] = el)}
-            className="inline-block"
+            className="inline-block opacity-0"
           >
             {letter}
           </span>
